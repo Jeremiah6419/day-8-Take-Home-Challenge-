@@ -2,8 +2,14 @@ body{
     background-color: lightblue;
 }
 
-.text-columns{
-column-count: 4;
-column-gap: 30px;
-column-rule: 1px solid red;
+.column{
+    float: left;
+    width: 18%;
+    padding: 20px;
+}
+
+.row::after{
+content: "";
+display: table;
+clear: both;
 }
